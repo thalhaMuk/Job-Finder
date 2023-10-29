@@ -5,6 +5,11 @@ import * as SplashScreen from 'expo-splash-screen';
 
 SplashScreen.preventAutoHideAsync();
 
+export const unstable_settings = {
+    // Ensure any route can link back to `/`
+    initialRouteName: "home",
+  };
+  
 const Layout = () => {
     const [fontsLoaded] = useFonts({
         DMBold: require('../assets/fonts/DMSans-Bold.ttf'),
